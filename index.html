@@ -1,202 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap 4</title>
-    <!-- bootstrap style -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <!-- font awesome -->
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- main css style -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!--    Google Fonts    -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- start upper bar  -->
-    <div class="upper-bar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <i class="fas fa-phone-alt"></i>
-            <span>+0123456789</span>
-            <i class="far fa-envelope"></i>
-            awny@gmail.com
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 4</title>
+  <!-- bootstrap style -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- main css style -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!--    Google Fonts    -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- start upper bar  -->
+  <div class="upper-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <i class="fas fa-phone-alt"></i>
+          <span>+0123456789</span>
+          <i class="far fa-envelope"></i>
+          awny@gmail.com
+        </div>
+        <div class="col-sm text-right">
+          <span>let's work together!</span>
+          <span class="get-quote">get quote</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end upper bar  -->
+  <!-- start navBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span>elite</span><span>Crop</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">about <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              work
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navBar -->
+  <!-- start slider -->
+  <div class="slider">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <h1>
+          we’re an independent design and <span>development</span> agency.
+        </h1>
+        <div class="overlay"></div>
+        <div class="carousel-item carousel-one active"></div>
+        <div class="carousel-item carousel-two"></div>
+        <div class="carousel-item carousel-three"></div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#main-slider" data-slide-to="1"></li>
+        <li data-target="#main-slider" data-slide-to="2"></li>
+      </ol>
+      <a class="carousel-control-prev move" href="#main-slider" role="button" data-slide="prev">
+        <span class="d-none d-sm-block carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next move" href="#main-slider" role="button" data-slide="next">
+        <span class="d-none d-sm-block carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- end slider -->
+  <!-- start features  -->
+  <div class="features text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <i class="fas fa-heart fa-2x rounded-circle"></i>
+          <h3>great idea</h3>
+          <p>
+            Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
+          </p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <i class="fas fa-cogs fa-2x rounded-circle"></i>
+          <h3>Quick Settings</h3>
+          <p>
+            Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
+          </p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <i class="fas fa-cloud fa-2x rounded-circle"></i>
+          <h3>Cloud Services</h3>
+          <p>
+            Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
+          </p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <i class="fas fa-bookmark fa-2x rounded-circle"></i>
+          <h3>Cross Dev</h3>
+          <p>
+            Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end features  -->
+  <!-- start company overview -->
+  <div class="overview text-center">
+    <div class="container">
+      <h2 class="text-uppercase h2-master">company overview</h2>
+      <p class="p-master">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+        dolores aliquam non pariatur illum necessitatibus corrupti dolorum
+      </p>
+      <span class="d-block">lets start today</span>
+      <button>view more</button>
+    </div>
+  </div>
+  <!-- end company overview  -->
+  <!-- start Feature work  -->
+  <div class="feature-work  text-center">
+    <div class="container">
+      <h2 class="h2-master">feature work</h2>
+      <p class="p-master">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+        dolores aliquam non pariatur illum necessitatibus corrupti dolorum
+      </p>
+      <ul class="list-unstyled row">
+        <li class="col-md active">All</li>
+        <li class="col-md">Websites</li>
+        <li class="col-md">Logos</li>
+        <li class="col-md">Graphic</li>
+        <li class="col-md">Marketing</li>
+        <li class="col-md">Videos</li>
+      </ul>
+    </div>
+    <div class="row shuffle-images">
+      <div class="col-md">
+        <img class="websites" src="./images/01.jpg" alt="">
+      </div>
+      <div class="col-md">
+        <img class="logo" src="./images/02.jpg" alt="">
+      </div>
+      <div class="col-md">
+        <img class="Marketing" src="./images/03.jpg" alt="">
+      </div>
+      <div class="col-md">
+        <img class="Videos" src="./images/04.jpg" alt="">
+      </div>
+    </div>
+    <div class="row shuffle-images">
+      <div class="col-md">
+        <img class="Graphic" src="./images/05.jpg" alt="">
+      </div>
+      <div class="col-md">
+        <img class="websites" src="./images/06.jpg" alt="">
+      </div>
+      <div class="col-md">
+        <img class="Graphic" src="./images/07.jpg" alt="">
+      </div>
+      <div class="col-md">
+        <img class="logo" src="./images/08.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- end Feature work  -->
+  <!-- start Latest Posts -->
+  <div class="latest-post text-center">
+    <div class="container">
+      <h2 class="h2-master">Latest Posts</h2>
+      <p class="p-master">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
+        dolores aliquam non pariatur illum necessitatibus corrupti dolorum
+      </p>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-left" style="width: 18rem;">
+            <img src="./images/post01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum is simply dummy text ofthe printing and</h5>
+              <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ducimus animi culpa,
+                similique esse nesciunt aspernatur, eius enim ab dolorem doloribus hic omnis tempore facilis officia
+                eaque nam fuga unde?</p>
+              <a href="#" class="card-link">Read More...</a>
+            </div>
           </div>
-          <div class="col-sm text-right">
-            <span>let's work together!</span>
-            <span class="get-quote">get quote</span>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-left" style="width: 18rem;">
+            <img src="./images/post02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum is simply dummy text ofthe printing and</h5>
+              <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ducimus animi culpa,
+                similique esse nesciunt aspernatur, eius enim ab dolorem doloribus hic omnis tempore facilis officia
+                eaque nam fuga unde?</p>
+              <a href="#" class="card-link">Read More..</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-left" style="width: 18rem;">
+            <img src="./images/post03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum is simply dummy text ofthe printing and</h5>
+              <h6 class="card-subtitle mb-2 text-muted">March 24 2017</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ducimus animi culpa,
+                similique esse nesciunt aspernatur, eius enim ab dolorem doloribus hic omnis tempore facilis officia
+                eaque nam fuga unde?</p>
+              <a href="#" class="card-link">Read More...</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- end upper bar  -->
-    <!-- start navBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <span>elite</span><span>Crop</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#main-nav"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >about <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                work
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- end navBar -->
-    <!-- start slider -->
-    <div class="slider">
-      <div id="main-slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <h1>
-            we’re an independent design and <span>development</span> agency.
-          </h1>
-          <div class="overlay"></div>
-          <div class="carousel-item carousel-one active"></div>
-          <div class="carousel-item carousel-two"></div>
-          <div class="carousel-item carousel-three"></div>
-        </div>
+  </div>
+  <!-- end Latest Posts -->
+  <!-- start testimonials -->
+  <div class="testimonials">
+    <div class="overlay"></div>
+    <div class="container">
+      <div id="testimonials" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-          <li data-target="#main-slider" data-slide-to="1"></li>
-          <li data-target="#main-slider" data-slide-to="2"></li>
+          <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonials" data-slide-to="1"></li>
+          <li data-target="#testimonials" data-slide-to="2"></li>
         </ol>
-        <a
-          class="carousel-control-prev move"
-          href="#main-slider"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            class="d-none d-sm-block carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next move"
-          href="#main-slider"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            class="d-none d-sm-block carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <!-- end slider -->
-    <!-- start features  -->
-    <div class="features text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <i class="fas fa-heart fa-2x rounded-circle"></i>
-            <h3>great idea</h3>
-            <p>
-              Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
-            </p>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption ">
+              <img src="./images/avatar01.png" alt="...">
+              <h3>Mohamed Faragallah</h3>
+              <span>Company CEO</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nq</p>
+            </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <i class="fas fa-cogs fa-2x rounded-circle"></i>
-            <h3>Quick Settings</h3>
-            <p>
-              Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
-            </p>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <img src="./images/avatar01.png" alt="...">
+              <h3>Ahmed Mosaad</h3>
+              <span>Company Manager</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nq</p>
+            </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
-            <i class="fas fa-cloud fa-2x rounded-circle"></i>
-            <h3>Cloud Services</h3>
-            <p>
-              Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
-            </p>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <i class="fas fa-bookmark fa-2x rounded-circle"></i>
-            <h3>Cross Dev</h3>
-            <p>
-              Lorem ipsum dolor sit amet, sectetur adipisicing elit, eiusmod
-            </p>
+          <div class="carousel-item">
+            <div class="carousel-caption ">
+              <img src="./images/avatar01.png" alt="...">
+              <h3>John Skeet</h3>
+              <span>Free Lancer</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nq</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- end features  -->
-    <!-- start company overview -->
-    <div class="overview text-center">
-      <div class="container">
-        <h2 class="text-uppercase">company overview</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi
-          dolores aliquam non pariatur illum necessitatibus corrupti dolorum
-        </p>
-        <span class="d-block">lets start today</span>
-        <button>view more</button>
-      </div>
-    </div>
-    <!-- end company overview  -->
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+    <a class="move carousel-control-prev d-none d-md-block" href="#testimonials" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="move carousel-control-next d-none d-md-block" href="#testimonials" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- end testimonials -->
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
