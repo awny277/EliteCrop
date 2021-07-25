@@ -7,6 +7,7 @@
   --p2-color: #6a6a6a;
   --white-color: white;
   --section-padding: 50px;
+  --section-background: #f7f7f7;
 }
 
 /* start variables */
@@ -23,7 +24,23 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
-  height: 9000px;
+  height: 12000px;
+}
+
+.h2-master {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--frist-color);
+  margin-bottom: 10px;
+}
+
+.p-master {
+  width: 90%;
+  margin: 0 auto 5px;
+  line-height: 1.7;
+  color: var(--p2-color);
+  font-size: 20px;
+
 }
 
 /* start global Ruls */
@@ -191,21 +208,6 @@ body {
   background-color: #f0f5f7;
 }
 
-.h2-master {
-  font-size: 45px;
-  font-weight: 700;
-  color: var(--frist-color);
-  margin-bottom: 10px;
-}
-
-.p-master {
-  width: 90%;
-  margin: 0 auto 5px;
-  line-height: 1.7;
-  color: var(--p2-color);
-  font-size: 20px;
-}
-
 .overview span {
   color: var(--p1-color);
   font-weight: 600;
@@ -275,15 +277,16 @@ body {
 /* end feature work  */
 
 /* start Latest Posts */
-.latest-post .row {
-  margin-left: -10px;
-}
-
 .latest-post .card {
   width: 21rem !important;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: 0 !important;
+}
+
+@media(min-width:992px) and (max-width: 1200px) {
+  .latest-post .card {
+    width: 19rem !important;
+  }
 }
 
 .latest-post .card h5 {
@@ -374,3 +377,120 @@ body {
 }
 
 /* end testimonials */
+
+/* start price table */
+
+.price-table {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.price-table .card {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 21rem !important;
+  margin-right: 20px;
+}
+
+@media(min-width:992px) and (max-width: 1200px) {
+  .price-table .card {
+    width: 19rem !important;
+  }
+}
+
+@media(min-width:992px) {
+  .price-table .diff {
+    margin-top: 50px;
+  }
+}
+
+.price-table .card .card-body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.price-table .card h3 {
+  color: var(--frist-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.price-table .card h6 {
+  color: var(--p2-color);
+  margin-bottom: 20px;
+}
+
+.price-table .card p {
+  font-size: 35px;
+  color: var(--frist-color);
+  font-weight: bold;
+  background-color: var(--section-background);
+  padding: 15px;
+}
+
+.price-table .card p span {
+  font-size: 18px;
+}
+
+.price-table .card ul li {
+  border: none;
+}
+
+.price-table .card a {
+  color: white;
+  background-color: var(--second-color);
+  padding: 15px 20px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.price-table .diff p {
+  color: var(--white-color);
+  background-color: var(--second-color);
+}
+
+.price-table .diff a {
+  background-color: var(--frist-color);
+}
+
+/* end price table */
+
+/* start choose-us */
+.choose-us .images {
+  padding: 0;
+}
+
+.choose-us img {
+  max-width: 100%;
+}
+
+.choose-us .content {
+  color: var(--white-color);
+  padding: 50px 40px;
+  background-color: var(--frist-color);
+}
+
+.choose-us .content h2 {
+  margin-bottom: 50px;
+}
+
+.choose-us p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.choose-us a {
+  color: var(--white-color);
+  font-size: 22px;
+  display: block;
+  background-color: var(--second-color);
+  width: fit-content;
+  padding: 15px 20px;
+}
+
+/* end choose-us */
