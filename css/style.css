@@ -24,7 +24,6 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
-  height: 12000px;
 }
 
 .h2-master {
@@ -494,3 +493,158 @@ body {
 }
 
 /* end choose-us */
+
+/* strat stats */
+.stats {
+  padding-top: calc(var(--section-padding) + 50px);
+  padding-bottom: calc(var(--section-padding) + 20px);
+}
+
+.stats .row div {
+  margin-bottom: 35px;
+}
+
+.stats i,
+.stats span {
+  color: var(--frist-color);
+  margin-bottom: 15px;
+}
+
+.stats span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.stats p {
+  color: var(--second-color);
+  font-size: 20px;
+}
+
+/* end stats */
+
+/* start contact-us  */
+.contact-us {
+  padding: calc(var(--section-padding) + 20px) 30px;
+  background-color: var(--second-color);
+  color: var(--white-color);
+  font-size: 22px;
+}
+
+.contact-us .row {
+  align-items: center;
+}
+
+.contact-us a {
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 15px 20px;
+  border: 2px solid var(--white-color);
+  text-transform: uppercase;
+}
+
+@media(max-width:768px) {
+  .contact-us p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contact-us .row div:nth-of-type(2) {
+    text-align: center !important;
+  }
+}
+
+/* end contact-us  */
+
+/* start footer  */
+.footer {
+  padding-top: var(--section-padding);
+}
+
+.footer .row div {
+  margin-bottom: 30px;
+}
+
+.footer h2 {
+  color: var(--frist-color);
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.footer .info h2 span {
+  font-size: 40px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.footer .info h2 span:last-of-type {
+  color: var(--second-color);
+  font-weight: normal;
+}
+
+.footer .info p {
+  line-height: 1.8;
+  color: var(--p2-color);
+  letter-spacing: 1px;
+}
+
+.footer .info a {
+  color: var(--frist-color);
+  font-weight: bold;
+}
+
+.footer .info a::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.footer .help .row {
+  margin-bottom: 0;
+}
+
+.footer .row .col {
+  margin-bottom: 0;
+}
+
+.footer .help ul li {
+  margin-bottom: 10px;
+}
+
+.footer .help ul li::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.footer .contact ul li {
+  margin-bottom: 30px;
+
+}
+
+/* end footer  */
+
+/* start copyright */
+.copyright p span {
+  color: var(--frist-color);
+  font-weight: bold;
+}
+
+.copyright p span:last-of-type {
+  color: var(--second-color);
+  font-weight: normal;
+}
+
+.copyright ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.copyright ul li i {
+  font-size: 20px;
+  color: var(--frist-color);
+}
+
+/* end copyright */
