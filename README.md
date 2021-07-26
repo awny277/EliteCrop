@@ -2,4 +2,4 @@
 
 ## Frist Bootstrap Template
 
-![#55e053](https://via.placeholder.com/12/55e053/000000?text=+) `Finished 50%` 
+![#fe346e](https://via.placeholder.com/12/fe346e/000000?text=+) `Finished 100%` 
